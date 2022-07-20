@@ -66,11 +66,11 @@ function App() {
                 <a href="https://digift-doyindev1.vercel.app/" class="text-light"
                 >DIGIFT - Gift Card Purchase App</a
                 >,
-                {/* <a
+                <a
                   href="https://breet-doyindev1.vercel.app/"
                   class="text-light"
                 >CryptoCurrency Platform Dashboard For Nigerians &#38; Ghanaians</a
-                >, */}
+                >,
                 <a href="https://connectifie.com" class="text-light"
                 >CONNECTIFIE - A Research Company Landing Page &#38; Blog</a
                 >,

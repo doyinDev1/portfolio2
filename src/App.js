@@ -1,12 +1,15 @@
 import './App.css';
-
+import { motion } from 'framer-motion'
 function App() {
   return (
     <>
       <body>
         <div class="loading"></div>
 
-        <section class="header">
+        <motion.section class="header"
+        initial={{y: "-100vh"}}
+        animate={{y: 0}}
+        >
           <div class="column-left">
             <h2 class="logo-type">Adedoyin Oyebanji</h2>
           </div>
@@ -17,9 +20,12 @@ function App() {
               >adedoyin27@gmail.com</a>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section class="tools">
+        <motion.section class="tools"
+        initial={{x: "-100vw"}}
+        animate={{x: 0}}
+        >
           <div class="column-left">
             <h2>Tools I Use</h2>
           </div>
@@ -29,9 +35,13 @@ function App() {
                 HTML, CSS, Javascript, React, NextJs, TailwindCSS, Node, Express</h1>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section class="tools">
+        <motion.section class="tools"
+        initial={{x: "100vw"}}
+        animate={{x: 0}}
+        transition={{ delay: 1.1}}
+        >
           <div class="column-left">
             <h2>Projects</h2>
           </div>
@@ -102,7 +112,7 @@ function App() {
               </h1>
             </div>
           </div>
-        </section>
+        </motion.section>
         <section class="tools">
           <div class="column-left">
             <h2>Services</h2>

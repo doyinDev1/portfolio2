@@ -7,8 +7,9 @@ function App() {
         <div class="loading"></div>
 
         <motion.section class="header"
-        initial={{y: "-100vh"}}
-        animate={{y: 0}}
+          initial={{ y: "-80vh" }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", stiffness: 120 }}
         >
           <div class="column-left">
             <h2 class="logo-type">Adedoyin Oyebanji</h2>
@@ -23,8 +24,8 @@ function App() {
         </motion.section>
 
         <motion.section class="tools"
-        initial={{x: "-100vw"}}
-        animate={{x: 0}}
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
         >
           <div class="column-left">
             <h2>Tools I Use</h2>
@@ -38,9 +39,9 @@ function App() {
         </motion.section>
 
         <motion.section class="tools"
-        initial={{x: "100vw"}}
-        animate={{x: 0}}
-        transition={{ delay: 1.1}}
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.4 }}
         >
           <div class="column-left">
             <h2>Projects</h2>
@@ -49,46 +50,64 @@ function App() {
             <div class="column-main-container-large">
               <h1>
                 I have built,
-                <a href="https://serviceschoolhouse.com/" class="text-light"
-                >SSH - An Onboarding App for Staffing and Training Customer Care
-                  Agents</a>,
+                <motion.a
+                  href="https://serviceschoolhouse.com/"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >SERVICE SCHOOL HOUSE - An Onboarding App for Staffing and Training Customer Care
+                  Agents</motion.a>,
 
-                <a href="https://testassessify.com/" class="text-light"
+                <motion.a href="https://testassessify.com/"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
                 >TEST ASSESSIFY - An Assessment and Screening app for hiring the
-                  best candidates for a recruitment process</a>,
-                <a
+                  best candidates for a recruitment process</motion.a>,
+                <motion.a
                   href="https://accesscoaching.loremexcellentiam.com/"
                   class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
                 >ACCESS COACHING - An Ed-Tech App for Access Bank with Special
-                  Curriculum for Training Employees</a>,
+                  Curriculum for Training Employees</motion.a>,
 
-                <a
+                <motion.a
                   href="https://customerservice.roleplaycareers.com/"
                   class="text-light"
-                >ROLEPLAY - An Ed-Tech App to train Staffs on Roleplay Careers</a
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >ROLEPLAY - An Ed-Tech App to train Staffs on Roleplay Careers</motion.a
                 >,
 
-                <a href="https://steamfest.9ijakids.com/" class="text-light"
+                <motion.a href="https://steamfest.9ijakids.com/"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
                 >STEAMFEST - A Fun Festival for kids with opportunity to explore
-                  Science, Technology, Engineering, Arts and Math (STEAM)</a
+                  Science, Technology, Engineering, Arts and Math (STEAM)</motion.a
                 >,
 
-                <a href="https://digift-doyindev1.vercel.app/" class="text-light"
-                >DIGIFT - Gift Card Purchase App</a
+                <motion.a href="https://digift-doyindev1.vercel.app/"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >DIGIFT - Gift Card Purchase App</motion.a
                 >,
-                <a
+                <motion.a
                   href="https://breet-doyindev1.vercel.app/"
                   class="text-light"
-                >CryptoCurrency Platform Dashboard For Nigerians &#38; Ghanaians</a
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >CryptoCurrency Platform Dashboard Demo For Nigerians &#38; Ghanaians</motion.a
                 >,
-                <a href="https://connectifie.com" class="text-light"
-                >CONNECTIFIE - A Research Company Landing Page &#38; Blog</a
-                >,
-                {/* <a
-                  href="https://zyhon96.github.io/bitcoin-tracker/"
+                <motion.a href="https://connectifie.com"
                   class="text-light"
-                >Bitcoin Tracker in Naira</a
-                >, */}
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >CONNECTIFIE - A Research Company Landing Page &#38; Blog</motion.a
+                >,
+
 
                 {/* <a href="https://zyhon96.github.io/doyinflix/" class="text-light"
                 >Movie Rental App</a
@@ -97,18 +116,29 @@ function App() {
                 >A Crypto StartUp Landing Page</a
                 >, */}
 
-                {/* <a href="https://zyhon96.github.io/twitter-ad/" class="text-light"
-                >Twitter Campaign Site</a
-                >, */}
 
                 {/* <a href="https://zyhon96.github.io/clone/" class="text-light"
                 >Sample Portfolio for Freelancers</a
                 >, */}
-                 and
-
-                <a href="https://zyhon96.github.io/Fiber-app/" class="text-light"
-                >a Portfolio Generator Landing Page</a
+                and
+                <motion.a
+                  href="https://zyhon96.github.io/bitcoin-tracker/"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >a Cryptocurrency Tracker in Naira</motion.a
                 >
+                {/* ,
+                <motion.a href="https://zyhon96.github.io/twitter-ad/" 
+                class="text-light"
+                 whileHover={{scale: 1.04, originX: 0,}}
+                 transiton={{type: "spring", stiffness: 300}}
+                >a Twitter Campaign Site</motion.a
+                > */}
+
+                {/* <a href="https://zyhon96.github.io/Fiber-app/" class="text-light"
+                >a Portfolio Generator Landing Page</a
+                > */}
               </h1>
             </div>
           </div>

@@ -100,8 +100,7 @@ function App() {
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >CryptoCurrency Platform Dashboard Demo For Nigerians &#38; Ghanaians</motion.a
-                >
-                and
+                >,
                 <motion.a href="https://connectifie.com"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}

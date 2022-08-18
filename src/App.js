@@ -100,13 +100,14 @@ function App() {
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >CryptoCurrency Platform Dashboard Demo For Nigerians &#38; Ghanaians</motion.a
-                >,
+                >
+                and
                 <motion.a href="https://connectifie.com"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >CONNECTIFIE - A Research Company Landing Page &#38; Blog</motion.a
-                >,
+                >
 
 
                 {/* <a href="https://zyhon96.github.io/doyinflix/" class="text-light"
@@ -120,14 +121,14 @@ function App() {
                 {/* <a href="https://zyhon96.github.io/clone/" class="text-light"
                 >Sample Portfolio for Freelancers</a
                 >, */}
-                and
+                {/* and
                 <motion.a
                   href="https://zyhon96.github.io/bitcoin-tracker/"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >a Cryptocurrency Tracker in Naira</motion.a
-                >
+                > */}
                 {/* ,
                 <motion.a href="https://zyhon96.github.io/twitter-ad/" 
                 class="text-light"

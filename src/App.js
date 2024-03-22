@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './App.css';
 import { motion } from 'framer-motion'
 function App() {
@@ -33,10 +34,25 @@ function App() {
           <div class="column-main">
             <div class="column-main-container-large">
               <h1>
-                HTML, CSS, Javascript, React, NextJs, TailwindCSS, Node, Express</h1>
+                HTML, CSS, Javascript, React, NextJs, TailwindCSS</h1>
             </div>
           </div>
         </motion.section>
+        <motion.section class="tools"
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+        >
+          <div class="column-left">
+            <h2>Technologies I Use</h2>
+          </div>
+          <div class="column-main">
+            <div class="column-main-container-large">
+              <h1>
+                Git, Unit Testing, Micro-frontend, CI/CD, Jira, Azure Boards</h1>
+            </div>
+          </div>
+        </motion.section>
+
 
         <motion.section class="tools"
           initial={{ x: "100vw" }}
@@ -51,61 +67,60 @@ function App() {
               <h1>
                 I have built,
                 <motion.a
-                  href="https://serviceschoolhouse.com/"
+                  href="/"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >STERLING RETAILCORE - Bespoke retail engine application. An initiative of Sterling Bank PLC.</motion.a
+                >,
+                <motion.a
+                  href="https://serviceschoolhouse.com/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >SERVICE SCHOOL HOUSE - An Onboarding App for Staffing and Training Customer Care
-                  Agents</motion.a>,
+                  Agents.</motion.a>,
 
-                <motion.a href="https://testassessify.com/"
+                <motion.a href="https://testassessify.com/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >TEST ASSESSIFY - An Assessment and Screening app for hiring the
-                  best candidates for a recruitment process</motion.a>,
+                  best candidates for a recruitment process.</motion.a>,
+                
                 <motion.a
-                  href="https://accesscoaching.loremexcellentiam.com/"
+                  href="https://icesolar.co/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
-                >ACCESS COACHING - An Ed-Tech App for Access Bank with Special
-                  Curriculum for Training Employees</motion.a>,
-
-                <motion.a
-                  href="https://customerservice.roleplaycareers.com/"
-                  class="text-light"
-                  whileHover={{ scale: 1.04, originX: 0, }}
-                  transiton={{ type: "spring", stiffness: 300 }}
-                >ROLEPLAY - An Ed-Tech App to train Staffs on Roleplay Careers</motion.a
+                >ICE SOLAR POWER - A Website for a tech company using solar technology to deploy distributed microutilities to empower the underserved. </motion.a
                 >,
-
-                <motion.a href="https://steamfest.9ijakids.com/"
+                
+                <motion.a href="https://nextcircle.org/" target="_blank"
+                  class="text-light"
+                  whileHover={{ scale: 1.04, originX: 0, }}
+                  transiton={{ type: "spring", stiffness: 300 }}
+                >NEXT CIRCLE - A Website for a Non Governmental Organization focused on creating economic impact.</motion.a
+                >,
+                <motion.a href="https://steamfunfest.com/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >STEAMFEST - A Fun Festival for kids with opportunity to explore
-                  Science, Technology, Engineering, Arts and Math (STEAM)</motion.a
-                >,
-
-                <motion.a href="https://digift-doyindev1.vercel.app/"
-                  class="text-light"
-                  whileHover={{ scale: 1.04, originX: 0, }}
-                  transiton={{ type: "spring", stiffness: 300 }}
-                >DIGIFT - Gift Card Purchase App</motion.a
+                  Science, Technology, Engineering, Arts and Math (STEAM).</motion.a
                 >,
                 <motion.a
-                  href="https://breet-doyindev1.vercel.app/"
+                  href="https://accesscoaching.loremexcellentiam.com/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
-                >CryptoCurrency Platform Dashboard Demo For Nigerians &#38; Ghanaians</motion.a
-                >,
-                <motion.a href="https://connectifie.com"
+                >ACCESS COACHING - An Ed-Tech App for Access Bank with Special
+                  Curriculum for Training Employees.</motion.a>,
+                <motion.a href="https://connectifie.com/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
-                >CONNECTIFIE - A Research Company Landing Page &#38; Blog</motion.a
+                >CONNECTIFIE - A Research Company Landing Page &#38; Blog.</motion.a
                 >
 
 
@@ -163,8 +178,8 @@ function App() {
               <h1>
                 <a href="#" style={{ color: "white" }}> My Resume {'>>'} </a>
                 <a
-                  href="./ADEDOYIN FRONTEND DEV Resume.pdf"
-                  download="ADEDOYIN FRONTEND DEV Resume.pdf"
+                  href="./ADEDOYIN OYEBANJI RESUME.pdf"
+                  download="ADEDOYIN OYEBANJI RESUME.pdf"
                 > {" "}Download</a
                 >
               </h1>
@@ -199,7 +214,8 @@ function App() {
           <div class="column-left"></div>
           <div class="column-main">
             <h3 class="footer-text">
-              Adedoyin Oyebanji. All Rights Reserved &copy; 2022.
+              Adedoyin Oyebanji. All Rights Reserved &copy; {new Date().getFullYear()}.
+
             </h3>
           </div>
         </section>

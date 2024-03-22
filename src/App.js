@@ -53,7 +53,6 @@ function App() {
           </div>
         </motion.section>
 
-
         <motion.section class="tools"
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
@@ -121,7 +120,7 @@ function App() {
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
                 >CONNECTIFIE - A Research Company Landing Page &#38; Blog.</motion.a
-                >
+                >, and so  many more...
 
 
                 {/* <a href="https://zyhon96.github.io/doyinflix/" class="text-light"
@@ -186,7 +185,6 @@ function App() {
             </div>
           </div>
         </section>
-
         <section class="tools">
           <div class="column-left">
             <h2>My Links</h2>
@@ -209,13 +207,11 @@ function App() {
             </div>
           </div>
         </section>
-
         <section class="footer">
           <div class="column-left"></div>
           <div class="column-main">
             <h3 class="footer-text">
               Adedoyin Oyebanji. All Rights Reserved &copy; {new Date().getFullYear()}.
-
             </h3>
           </div>
         </section>

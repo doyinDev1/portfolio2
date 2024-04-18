@@ -88,7 +88,7 @@ function App() {
                   best candidates for a recruitment process.</motion.a>,
                 
                 <motion.a
-                  href="https://icesolar.co/" target="_blank"
+                  href="https://www.icesolar.co/" target="_blank"
                   class="text-light"
                   whileHover={{ scale: 1.04, originX: 0, }}
                   transiton={{ type: "spring", stiffness: 300 }}
